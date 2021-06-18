@@ -21,6 +21,7 @@ public class CatchupService {
 	UserRepository usersRepo;
 	
 	public List<Events> getEvents(String City) {
+		System.out.println(City);
 		List<Events> events = eventsRepo.findByCity(City);
 		events.forEach(System.out::println);
 		return events;
