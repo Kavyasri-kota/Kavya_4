@@ -20,8 +20,9 @@ public class CatchupService {
 	@Autowired
 	UserRepository usersRepo;
 	
-	public List<Events> getEvents(String name) {
-		List<Events> events = eventsRepo.findAll();
+	public List<Events> getEvents(String City) {
+		List<Events> events = eventsRepo.findByCity(City);
+		events.forEach(System.out::println);
 		return events;
 	}
 }

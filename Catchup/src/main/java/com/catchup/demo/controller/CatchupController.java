@@ -18,8 +18,8 @@ public class CatchupController {
 	public  CatchupService serv;
 	
 	@GetMapping("/events/{city}")
-	public List<Events> getEvents(String City) {
-		List<Events> events = serv.getEvents(City);
+	public List<Events> getEvents(String city) {
+		List<Events> events = serv.getEvents(city);
 		return events;
 	}
 }

@@ -28,7 +28,7 @@ public class Users {
 	  	@Id
 	    private String user_id;
 	    private String name;
-	    private String City;
+	    private String city;
 	    private Integer events;
 
 	     

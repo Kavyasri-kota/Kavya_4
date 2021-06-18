@@ -2,24 +2,23 @@ DROP TABLE IF EXISTS Events;
 
 CREATE TABLE Events (
   id INT AUTO_INCREMENT  PRIMARY KEY,
-  Name VARCHAR(250) NOT NULL,
-  City VARCHAR(250) NOT NULL,
-  Date DATE DEFAULT NULL,
-  user_id int DEFAULT NULL,
-  Registered VARCHAR(250) DEFAULT NULL
+  name VARCHAR(250) NOT NULL,
+  city VARCHAR(250) NOT NULL,
+  date DATE DEFAULT NULL,
+  user_id VARCHAR(250) DEFAULT NULL
 );
 
 CREATE TABLE Users (
   user_id VARCHAR(250) PRIMARY KEY,
-  Name VARCHAR(250) NOT NULL,
+  name VARCHAR(250) NOT NULL,
   City VARCHAR(250) NOT NULL,
   Events int DEFAULT NULL
 );
 
-INSERT INTO events (name, city, date,registered) VALUES
-  ('DataScience', 'Hyderabad', to_date('02-06-2021','dd-mm-yyyy'),'Y'),
-  ('MachineLearning', 'Ahmedabad', to_date('10-06-2021','dd-mm-yyyy'),'Y'),
-  ('WindowsUpdate', 'Online', to_date('14-07-2021','dd-mm-yyyy'),'Y');
+INSERT INTO events (name, city, date,user_id) VALUES
+  ('DataScience', 'Hyderabad', to_date('02-06-2021','dd-mm-yyyy'),'Kavya_4'),
+  ('MachineLearning', 'Ahmedabad', to_date('10-06-2021','dd-mm-yyyy'),'Kavya_4'),
+  ('WindowsUpdate', 'Online', to_date('14-07-2021','dd-mm-yyyy'),'Aditya_8');
   
 INSERT INTO users (user_id,name, city) VALUES
   ('Kavya_4','Kavya', 'Hyderabad'),

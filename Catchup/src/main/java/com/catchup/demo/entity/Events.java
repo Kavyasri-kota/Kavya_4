@@ -30,7 +30,7 @@ public class Events {
 	    @GeneratedValue(strategy = GenerationType.SEQUENCE)
 	    private Long id;
 	    private String name;
-	    private String City;
+	    private String city;
 	    private Date date;
 	    private String user_id;
 	     
