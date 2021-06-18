@@ -21,6 +21,9 @@ public class CatchupController {
 	@GetMapping("/events/{city}")
 	public List<Events> getEvents(@PathVariable String city) {
 		List<Events> events = serv.getEvents(city);
+		System.out.println(events.size());
+		
+		for(Events e:events)e.toString();
 		return events;
 	}
 }
